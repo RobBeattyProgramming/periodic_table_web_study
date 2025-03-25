@@ -17,9 +17,27 @@ function getRandomNumber(maxMinusOne){
     return Math.floor(Math.random() * maxMinusOne);
 }
 
-function getRandomElement()
+function getRandomElement(quality)
 {
     let randomNumber = getRandomNumber(10); // change to 104 (one above)
     console.log(periodicInfo[randomNumber]);
+
+    if (quality == "name")
+    {
+        return periodicInfo[0];
+    }
+    else if (quality == "symbol")
+    {
+        return periodicInfo[1];
+    }
+    else if (quality == "number")
+    {
+        return periodicInfo[2];
+    }
+    else if (quality == "weight")
+    {
+        return periodicInfo[3];
+    }
+
 
 }
