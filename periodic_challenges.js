@@ -17,27 +17,18 @@ function getRandomNumber(maxMinusOne){
     return Math.floor(Math.random() * maxMinusOne);
 }
 
-function getRandomElement(quality)
+function getRandomElement()
 {
     let randomNumber = getRandomNumber(10); // change to 104 (one above)
-    console.log(periodicInfo[randomNumber]);
+    let chosenElement = periodicInfo[randomNumber];
 
-    if (quality == "name")
-    {
-        return periodicInfo[0];
-    }
-    else if (quality == "symbol")
-    {
-        return periodicInfo[1];
-    }
-    else if (quality == "number")
-    {
-        return periodicInfo[2];
-    }
-    else if (quality == "weight")
-    {
-        return periodicInfo[3];
-    }
-
+    let elementName = document.getElementById("elementName");
+    elementName.textContent = chosenElement[0];
+    let elementSymbol = document.getElementById("elementSymbol");
+    elementSymbol.textContent = chosenElement[1];
+    let atomicNumber = document.getElementById("atomicNumber");
+    atomicNumber.textContent = chosenElement[2];
+    let atomicMass = document.getElementById("atomicMass");
+    atomicMass.textContent = chosenElement[3];
 
 }
