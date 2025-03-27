@@ -1,9 +1,14 @@
-* {
-    background-color: yellowgreen;
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+
+    background-color: yellow;
 }
 
 .main-element-container {
     border-style: double;
+    background-color: yellowgreen;
 
     display: flex;
     flex-direction: column;
@@ -37,4 +42,11 @@
     font-weight: 500;
     display: flex;
     justify-content: center;
+}
+
+#element-description {
+    display: flex;
+    justify-content: center;
+
+    font-size: 30px;
 }

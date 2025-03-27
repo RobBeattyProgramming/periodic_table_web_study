@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Document</title>
 
     <script src="periodic_challenges.js"></script>
 </head>
 <body>
-    <h1>TEST</h1>
 
-    <div>
-        <p id="atomicNumber"></p>
-        <p id="atomicMass"></p>
-        <p id="elementSymbol"></p>
-        <p id="elementName"></p>
+    <div class="menu-container">
+        <h1>Learn the Periodic Table!</h1>
+        <h2>Pick your game:</h2>
+        <button>Beginner</button>
+        <button>Intermediate</button>
+        <button>Hard</button>
     </div>
+
+    <div class="main-element-container">
+        <div class="top-section-container">
+            <p id="atomicNumber"></p>
+            <p id="atomicMass"></p>
+        </div>
+            <p id="elementSymbol"></p>
+            <p id="elementName"></p>
+    </div>
+
+    <p id="elementDescription">Test</p>
 
     <script>
         getRandomElement();
