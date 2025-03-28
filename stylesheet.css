@@ -1,14 +1,34 @@
+* {
+    background-color: blueviolet;
+}
+
+h1, h2 {
+    background-color: yellow;
+    margin-right: 5%;
+}
 
 .menu-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     background-color: yellow;
+}
+
+.game-choice-container {
+    display: flex;
+    flex-direction: row;
+
+    background-color: yellow;
+
 }
 
 .main-element-container {
     border-style: double;
     background-color: yellowgreen;
+    margin-top: 2%;
+    margin-right: 25%;
+    margin-left: 25%;
 
     display: flex;
     flex-direction: column;
@@ -16,37 +36,48 @@
 }
 
 .top-section-container {
+    background-color: yellowgreen;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 #elementSymbol {
+    background-color: yellowgreen;
     font-size: 80px;
     display: flex;
     justify-content: center;
 }
 
 #atomicMass {
+    background-color: yellowgreen;
     font-size: 20px;
     font-weight: 500;
 }
 
 #atomicNumber{
+    background-color: yellowgreen;
     font-size: 20px;
     font-weight: 500;
 }
 
 #elementName {
+    background-color: yellowgreen;
     font-size: 20px;
     font-weight: 500;
     display: flex;
     justify-content: center;
 }
 
-#element-description {
-    display: flex;
-    justify-content: center;
+#elementDescription {
+    margin-top: 2%;
+    margin-right: 25%;
+    margin-left: 25%;
 
-    font-size: 30px;
+    font-size: 20px;
+}
+
+button {
+    background-color: brown;
+    font-weight: 400;
 }
