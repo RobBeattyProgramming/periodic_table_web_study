@@ -23,12 +23,20 @@ h1, h2 {
 
 }
 
+.main-content-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+
+}
+
 .main-element-container {
     border-style: double;
     background-color: yellowgreen;
     margin-top: 2%;
-    margin-right: 25%;
-    margin-left: 25%;
+
+    max-width: 300px;
 
     display: flex;
     flex-direction: column;
@@ -71,8 +79,8 @@ h1, h2 {
 
 #elementDescription {
     margin-top: 2%;
-    margin-right: 25%;
-    margin-left: 25%;
+
+    max-width: 300px;
 
     font-size: 20px;
 }
@@ -102,9 +110,6 @@ span {
     min-width: 25px;
     max-width: 25px;
     text-align: center;
-   
-
-    
 
 }
 
@@ -114,21 +119,16 @@ span {
     flex-direction: column;
 
     border-style: dotted;
-
     box-sizing: border-box;
 
     max-width: 585px;
 
-   
-    
 }
 
 .row-one {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-
 
 }
 
